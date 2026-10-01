@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devenir livreur — IRA EXPRESS</title>
+    <link rel="icon" href="/assets/images/logo.jpg">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="entete-inclusion"></div>
+
+    <main class="page-etroite">
+        <div class="carte-form">
+            <h1>Devenir livreur</h1>
+            <p>Rejoignez IRA EXPRESS et livrez les commandes des clients d'Agadez.</p>
+
+            <div id="zone-message"></div>
+
+            <form id="form-register-livreur">
+                <div class="champ">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" required>
+                </div>
+                <div class="champ">
+                    <label for="telephone">Numéro de téléphone</label>
+                    <input type="tel" id="telephone" required>
+                </div>
+                <div class="champ">
+                    <label for="quartier">Quartier</label>
+                    <input type="text" id="quartier">
+                </div>
+                <div class="champ">
+                    <label for="type_vehicule">Moyen de déplacement</label>
+                    <select id="type_vehicule">
+                        <option value="moto">Moto</option>
+                        <option value="velo">Vélo</option>
+                        <option value="voiture">Voiture</option>
+                        <option value="a_pied">À pied</option>
+                    </select>
+                </div>
+                <div class="champ">
+                    <label for="mot_de_passe">Mot de passe</label>
+                    <input type="password" id="mot_de_passe" required>
+                </div>
+                <div class="champ">
+                    <label for="confirmation">Confirmer le mot de passe</label>
+                    <input type="password" id="confirmation" required>
+                </div>
+                <button type="submit" class="btn btn-principal btn-pleine-largeur btn-large">Envoyer ma
+                    candidature</button>
+            </form>
+            <p class="lien-bas">Déjà livreur ? <a href="/auth/login.html">Se connecter</a></p>
+        </div>
+    </main>
+
+    <div id="pied-inclusion"></div>
+
+    <script src="/assets/js/api.js"></script>
+    <script src="/assets/js/cart.js"></script>
+    <script src="/assets/js/layout.js"></script>
+    <script src="/assets/js/pages/auth.js"></script>
+</body>
+
+</html>

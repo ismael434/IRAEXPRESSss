@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion — IRA EXPRESS</title>
+    <link rel="icon" href="/assets/images/logo.jpg">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="entete-inclusion"></div>
+
+    <main class="page-etroite">
+        <div class="carte-form">
+            <h1>Connexion</h1>
+            <p>Accédez à votre espace client, commerçant ou livreur.</p>
+
+            <div id="zone-message"></div>
+
+            <form id="form-login">
+                <div class="champ">
+                    <label for="telephone">Numéro de téléphone</label>
+                    <input type="tel" id="telephone" required autofocus>
+                </div>
+                <div class="champ">
+                    <label for="mot_de_passe">Mot de passe</label>
+                    <input type="password" id="mot_de_passe" required>
+                </div>
+                <button type="submit" class="btn btn-principal btn-pleine-largeur btn-large">Se connecter</button>
+            </form>
+            <p class="lien-bas">
+                Pas encore de compte ? <a href="/auth/register.html">Client</a> ·
+                <a href="/auth/register_commercant.html">Commerçant</a> ·
+                <a href="/auth/register_livreur.html">Livreur</a>
+            </p>
+        </div>
+    </main>
+
+    <div id="pied-inclusion"></div>
+
+    <script src="/assets/js/api.js"></script>
+    <script src="/assets/js/cart.js"></script>
+    <script src="/assets/js/layout.js"></script>
+    <script src="/assets/js/pages/auth.js"></script>
+</body>
+
+</html>

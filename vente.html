@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes ventes — IRA EXPRESS</title>
+    <link rel="icon" href="/assets/images/logo.jpg">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body data-sidebar="merchant" data-page="ventes">
+    <div class="mise-en-page-tableau">
+        <div id="barre-laterale-inclusion"></div>
+
+        <main class="contenu-principal">
+            <div class="entete-page">
+                <div>
+                    <h1>Mes ventes</h1>
+                    <p>Historique de vos commandes livrées et de vos revenus.</p>
+                </div>
+            </div>
+
+            <div class="grille-stats">
+                <div class="carte-stat"><span>Commandes livrées</span><strong id="stat-nb-ventes">—</strong></div>
+                <div class="carte-stat"><span>Chiffre d'affaires total</span><strong id="stat-ca">—</strong></div>
+                <div class="carte-stat"><span>Produit le plus vendu</span><strong id="stat-top-produit"
+                        style="font-size:1.1rem">—</strong></div>
+            </div>
+
+            <div class="tableau-conteneur">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Client</th>
+                            <th>Montant</th>
+                            <th>Date de commande</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corps-tableau-ventes">
+                        <tr>
+                            <td colspan="4" style="color:var(--texte-att)">Chargement…</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="/assets/js/api.js"></script>
+    <script src="/assets/js/cart.js"></script>
+    <script src="/assets/js/layout.js"></script>
+    <script src="/assets/js/pages/merchant.js"></script>
+</body>
+
+</html>

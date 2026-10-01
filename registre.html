@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un compte — IRA EXPRESS</title>
+    <link rel="icon" href="/assets/images/logo.jpg">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="entete-inclusion"></div>
+
+    <main class="page-etroite">
+        <div class="carte-form">
+            <h1>Créer un compte client</h1>
+            <p>Pour commander vos produits et suivre vos livraisons.</p>
+
+            <div id="zone-message"></div>
+
+            <form id="form-register-client">
+                <div class="champ">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" required>
+                </div>
+                <div class="champ">
+                    <label for="telephone">Numéro de téléphone</label>
+                    <input type="tel" id="telephone" placeholder="90 00 00 00" required>
+                </div>
+                <div class="champ">
+                    <label for="quartier">Quartier</label>
+                    <input type="text" id="quartier" placeholder="Ex : Sabon Gari">
+                </div>
+                <div class="champ">
+                    <label for="mot_de_passe">Mot de passe</label>
+                    <input type="password" id="mot_de_passe" required>
+                </div>
+                <div class="champ">
+                    <label for="confirmation">Confirmer le mot de passe</label>
+                    <input type="password" id="confirmation" required>
+                </div>
+                <button type="submit" class="btn btn-principal btn-pleine-largeur btn-large">Créer mon compte</button>
+            </form>
+            <p class="lien-bas">Déjà un compte ? <a href="/auth/login.html">Se connecter</a></p>
+        </div>
+    </main>
+
+    <div id="pied-inclusion"></div>
+
+    <script src="/assets/js/api.js"></script>
+    <script src="/assets/js/cart.js"></script>
+    <script src="/assets/js/layout.js"></script>
+    <script src="/assets/js/pages/auth.js"></script>
+</body>
+
+</html>

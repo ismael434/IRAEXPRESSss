@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRA EXPRESS — Votre partenaire de tous les jours</title>
+    <link rel="icon" href="/assets/images/logo.jpg">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="entete-inclusion"></div>
+
+    <main>
+        <section class="hero">
+            <div class="conteneur">
+                <div class="hero-contenu">
+                    <p class="hero-eyebrow">IRA EXPRESS — Agadez</p>
+                    <h1>Commandez à Agadez, <span>on vous livre</span> où que vous soyez.</h1>
+                    <p>Votre partenaire de tous les jours. Gaz domestique, alimentation, matériaux de construction et
+                        colis : commandez en ligne, un livreur s'occupe du reste.</p>
+                    <div class="hero-actions">
+                        <a href="#categories" class="btn btn-principal btn-large">Commander maintenant</a>
+                        <a href="/auth/register_commercant.html" class="btn btn-secondaire btn-large">Devenir
+                            commerçant</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div><strong>4</strong><span>catégories de services</span></div>
+                        <div><strong>Agadez</strong><span>livraison locale</span></div>
+                        <div><strong>24/7</strong><span>commandes en ligne</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="categories">
+            <div class="conteneur">
+                <div class="section-titre">
+                    <h2>Que voulez-vous commander aujourd'hui ?</h2>
+                    <p>Choisissez une catégorie pour découvrir les commerçants disponibles près de chez vous.</p>
+                </div>
+                <div class="grille-categories" id="grille-categories">
+                    <!-- Rempli dynamiquement par assets/js/pages/index.js -->
+                    <p style="color:var(--texte-att)">Chargement des catégories…</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="comment-ca-marche">
+            <div class="conteneur">
+                <div class="section-titre">
+                    <h2>Comment ça marche</h2>
+                    <p>Trois étapes simples entre votre envie et votre porte.</p>
+                </div>
+                <div class="etapes">
+                    <div class="etape">
+                        <div class="etape-num">01</div>
+                        <h3>Choisissez vos produits</h3>
+                        <p>Parcourez les catégories et ajoutez vos articles au panier depuis les boutiques partenaires.
+                        </p>
+                    </div>
+                    <div class="etape">
+                        <div class="etape-num">02</div>
+                        <h3>Validez votre commande</h3>
+                        <p>Indiquez votre quartier et votre numéro, puis confirmez. Le commerçant reçoit votre commande.
+                        </p>
+                    </div>
+                    <div class="etape">
+                        <div class="etape-num">03</div>
+                        <h3>Recevez votre livraison</h3>
+                        <p>Un livreur IRA EXPRESS récupère et vous livre directement, où que vous soyez à Agadez.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="devenir-commercant">
+            <div class="conteneur">
+                <div class="bandeau-cta">
+                    <div>
+                        <h2>Vous êtes commerçant à Agadez ?</h2>
+                        <p>Créez votre boutique en ligne, ajoutez vos produits et recevez des commandes de toute la
+                            ville, sans frais d'installation.</p>
+                    </div>
+                    <a href="/auth/register_commercant.html" class="btn btn-principal btn-large">Ouvrir ma boutique</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="pied-inclusion"></div>
+
+    <script src="/assets/js/api.js"></script>
+    <script src="/assets/js/cart.js"></script>
+    <script src="/assets/js/layout.js"></script>
+    <script src="/assets/js/pages/index.js"></script>
+</body>
+
+</html>

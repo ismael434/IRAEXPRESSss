@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devenir commerçant — IRA EXPRESS</title>
+    <link rel="icon" href="/assets/images/logo.jpg">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="entete-inclusion"></div>
+
+    <main class="page-etroite" style="max-width:520px">
+        <div class="carte-form">
+            <h1>Ouvrir ma boutique</h1>
+            <p>Vendez vos produits aux clients d'Agadez et recevez leurs commandes directement.</p>
+
+            <div id="zone-message"></div>
+
+            <form id="form-register-commercant">
+                <div class="champ">
+                    <label for="nom">Votre nom complet</label>
+                    <input type="text" id="nom" required>
+                </div>
+                <div class="champ">
+                    <label for="telephone">Numéro de téléphone</label>
+                    <input type="tel" id="telephone" required>
+                </div>
+                <div class="champ">
+                    <label for="nom_boutique">Nom de la boutique</label>
+                    <input type="text" id="nom_boutique" placeholder="Ex : Alimentation Sahel" required>
+                </div>
+                <div class="champ">
+                    <label for="description">Description de votre activité</label>
+                    <textarea id="description"
+                        placeholder="Ex : Vente de denrées alimentaires en gros et détail"></textarea>
+                </div>
+                <div class="champ">
+                    <label for="quartier">Quartier</label>
+                    <input type="text" id="quartier">
+                </div>
+                <div class="champ">
+                    <label for="mot_de_passe">Mot de passe</label>
+                    <input type="password" id="mot_de_passe" required>
+                </div>
+                <div class="champ">
+                    <label for="confirmation">Confirmer le mot de passe</label>
+                    <input type="password" id="confirmation" required>
+                </div>
+                <button type="submit" class="btn btn-principal btn-pleine-largeur btn-large">Créer ma boutique</button>
+            </form>
+            <p class="lien-bas">Déjà commerçant ? <a href="/auth/login.html">Se connecter</a></p>
+        </div>
+    </main>
+
+    <div id="pied-inclusion"></div>
+
+    <script src="/assets/js/api.js"></script>
+    <script src="/assets/js/cart.js"></script>
+    <script src="/assets/js/layout.js"></script>
+    <script src="/assets/js/pages/auth.js"></script>
+</body>
+
+</html>

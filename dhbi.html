@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord livreur — IRA EXPRESS</title>
+    <link rel="icon" href="/assets/images/logo.jpg">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body data-sidebar="delivery" data-page="dashboard">
+    <div class="mise-en-page-tableau">
+        <div id="barre-laterale-inclusion"></div>
+
+        <main class="contenu-principal">
+            <div class="entete-page">
+                <div>
+                    <h1 id="titre-bonjour">Bonjour</h1>
+                    <p>Voici l'état de vos livraisons aujourd'hui.</p>
+                </div>
+                <button type="button" id="btn-disponibilite" class="btn btn-secondaire">…</button>
+            </div>
+
+            <div class="grille-stats">
+                <div class="carte-stat"><span>Livraisons en cours</span><strong id="stat-attribuees">—</strong></div>
+                <div class="carte-stat"><span>Livraisons terminées</span><strong id="stat-livrees">—</strong></div>
+                <div class="carte-stat"><span>Commandes à récupérer</span><strong id="stat-disponibles">—</strong></div>
+            </div>
+
+            <div class="bandeau-cta" style="padding:34px">
+                <div>
+                    <h2 style="font-size:1.2rem">Consultez vos commandes attribuées</h2>
+                    <p>Retrouvez le détail des livraisons qui vous ont été confiées et mettez à jour leur statut.</p>
+                </div>
+                <a href="/delivery/commandes.html" class="btn btn-principal">Voir mes commandes</a>
+            </div>
+        </main>
+    </div>
+
+    <script src="/assets/js/api.js"></script>
+    <script src="/assets/js/cart.js"></script>
+    <script src="/assets/js/layout.js"></script>
+    <script src="/assets/js/pages/delivery.js"></script>
+</body>
+
+</html>

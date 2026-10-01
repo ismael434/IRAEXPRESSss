@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes produits — IRA EXPRESS</title>
+    <link rel="icon" href="/assets/images/logo.jpg">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body data-sidebar="merchant" data-page="produits">
+    <div class="mise-en-page-tableau">
+        <div id="barre-laterale-inclusion"></div>
+
+        <main class="contenu-principal">
+            <div class="entete-page">
+                <div>
+                    <h1>Mes produits</h1>
+                    <p id="nb-produits-texte"></p>
+                </div>
+                <a href="/merchant/ajouter_produit.html" class="btn btn-principal">+ Ajouter un produit</a>
+            </div>
+
+            <div id="zone-message"></div>
+
+            <div class="grille-produits" id="grille-produits">
+                <p style="color:var(--texte-att)">Chargement…</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="/assets/js/api.js"></script>
+    <script src="/assets/js/cart.js"></script>
+    <script src="/assets/js/layout.js"></script>
+    <script src="/assets/js/pages/merchant.js"></script>
+</body>
+
+</html>

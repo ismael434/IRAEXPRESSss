@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon panier — IRA EXPRESS</title>
+    <link rel="icon" href="/assets/images/logo.jpg">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="entete-inclusion"></div>
+
+    <main>
+        <section class="section" style="padding-top:50px">
+            <div class="conteneur" style="max-width:760px">
+                <div class="section-titre">
+                    <h2>Mon panier</h2>
+                    <p>Vérifiez vos articles puis renseignez votre adresse de livraison.</p>
+                </div>
+
+                <div class="tableau-conteneur" style="padding:24px;margin-bottom:24px">
+                    <div id="liste-panier"></div>
+                    <div style="display:flex;justify-content:space-between;padding-top:16px;font-size:1.1rem">
+                        <strong>Total</strong>
+                        <strong id="total-panier">0 FCFA</strong>
+                    </div>
+                </div>
+
+                <div class="carte-form">
+                    <h1>Informations de livraison</h1>
+                    <p>Ces informations seront transmises au commerçant et au livreur.</p>
+
+                    <div id="zone-non-connecte" style="display:none">
+                        <p class="message-erreur">
+                            Vous devez être connecté pour valider une commande.
+                            <a href="/auth/login.html" style="color:#fff;text-decoration:underline">Se connecter</a>
+                            ou <a href="/auth/register.html" style="color:#fff;text-decoration:underline">créer un
+                                compte client</a>.
+                        </p>
+                    </div>
+
+                    <form id="form-commande" style="display:none">
+                        <div id="zone-message"></div>
+                        <div class="champ">
+                            <label for="quartier">Quartier</label>
+                            <input type="text" id="quartier" placeholder="Ex : Sabon Gari" required>
+                        </div>
+                        <div class="champ">
+                            <label for="adresse">Adresse précise / repère</label>
+                            <textarea id="adresse" placeholder="Ex : Près de la grande mosquée, maison bleue"
+                                required></textarea>
+                        </div>
+                        <div class="champ">
+                            <label for="telephone">Numéro de téléphone</label>
+                            <input type="tel" id="telephone" placeholder="90 00 00 00" required>
+                        </div>
+                        <div class="champ">
+                            <label for="mode_paiement">Mode de paiement</label>
+                            <select id="mode_paiement">
+                                <option value="a_la_livraison">Paiement à la livraison</option>
+                                <option value="mobile_money">Mobile Money</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-principal btn-pleine-largeur btn-large">Valider ma
+                            commande</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="pied-inclusion"></div>
+
+    <script src="/assets/js/api.js"></script>
+    <script src="/assets/js/cart.js"></script>
+    <script src="/assets/js/layout.js"></script>
+    <script src="/assets/js/pages/panier.js"></script>
+</body>
+
+</html>

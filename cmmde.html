@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commandes attribuées — IRA EXPRESS</title>
+    <link rel="icon" href="/assets/images/logo.jpg">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body data-sidebar="delivery" data-page="commandes">
+    <div class="mise-en-page-tableau">
+        <div id="barre-laterale-inclusion"></div>
+
+        <main class="contenu-principal">
+            <div class="entete-page">
+                <div>
+                    <h1>Mes commandes</h1>
+                    <p>Gérez vos livraisons en cours et prenez de nouvelles courses.</p>
+                </div>
+            </div>
+
+            <h2 style="font-size:1.1rem;margin-bottom:14px">Commandes à récupérer</h2>
+            <div class="tableau-conteneur" style="margin-bottom:34px">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Boutique</th>
+                            <th>Quartier</th>
+                            <th>Montant</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corps-disponibles">
+                        <tr>
+                            <td colspan="5" style="color:var(--texte-att)">Chargement…</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 style="font-size:1.1rem;margin-bottom:14px">Mes livraisons</h2>
+            <div class="tableau-conteneur">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Client</th>
+                            <th>Adresse</th>
+                            <th>Téléphone</th>
+                            <th>Statut</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corps-mes-commandes">
+                        <tr>
+                            <td colspan="6" style="color:var(--texte-att)">Chargement…</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="/assets/js/api.js"></script>
+    <script src="/assets/js/cart.js"></script>
+    <script src="/assets/js/layout.js"></script>
+    <script src="/assets/js/pages/delivery.js"></script>
+</body>
+
+</html>
